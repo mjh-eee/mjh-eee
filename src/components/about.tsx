@@ -88,9 +88,12 @@ const skills = [
   "JavaScript / TypeScript",
   "React / Next.js",
   "Node.js",
+  "Express.js",
   "Tailwind CSS",
   "UI/UX Design",
   "Framer Motion",
+  "MongoDB", 
+  "PostGresSQL",
 ];
 
 export function About() {

@@ -6,8 +6,19 @@ import { ArrowRight, Mail, Sparkles } from "lucide-react";
 import {
   SiReact,
   SiNextdotjs,
-  SiTailwindcss,
+
   SiMongodb,
+  SiGithub,
+  SiTypescript,
+
+  SiPostgresql,
+
+  SiNodedotjs,
+  SiJavascript, 
+  SiHtmx,
+  SiFlutter,
+  SiFirebase,
+  SiExpress 
 } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
@@ -16,8 +27,17 @@ import { hero, roles, site } from "@/lib/content";
 const orbitIcons = [
   { Icon: SiReact, label: "React" },
   { Icon: SiNextdotjs, label: "Next.js" },
-  { Icon: SiTailwindcss, label: "Tailwind CSS" },
   { Icon: SiMongodb, label: "MongoDB" },
+  { Icon: SiGithub, label: "Github" },
+  { Icon: SiTypescript, label: "TypeScript" },
+  { Icon: SiPostgresql, label: "PostgresSQL" },
+  { Icon: SiNodedotjs, label: "Node.js" },
+  { Icon: SiJavascript, label: "javascript" },
+  { Icon: SiHtmx, label: "HTML" },
+  { Icon: SiFlutter, label: "Flutter" },
+  { Icon: SiFirebase, label: "Firebase" },
+  { Icon: SiExpress, label: "Express.js" },
+ 
 ];
 
 export function Hero() {

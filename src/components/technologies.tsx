@@ -25,6 +25,18 @@ const iconMap: Record<string, { Icon: React.ComponentType<{ className?: string }
   Postgres: { Icon: SiPostgresql, color: "#4169E1" },
 };
 
+// Official website for each technology
+const urlMap: Record<string, string> = {
+  HTML: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  CSS: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  "Tailwind CSS": "https://tailwindcss.com",
+  JS: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  React: "https://react.dev",
+  NextJS: "https://nextjs.org",
+  MongoDB: "https://www.mongodb.com",
+  Postgres: "https://www.postgresql.org",
+};
+
 export function Technologies() {
   return (
     <section id="technologies" className="relative py-24 sm:py-32">
@@ -35,9 +47,13 @@ export function Technologies() {
           {technologies.items.map((tech, i) => {
             const entry = iconMap[tech.name];
             const Icon = entry?.Icon;
+            const href = urlMap[tech.name];
             return (
-              <motion.div
+              <motion.a
                 key={tech.name}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 24, scale: 0.94 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-60px" }}
@@ -54,7 +70,7 @@ export function Technologies() {
                 <span className="font-mono-utility text-xs text-[var(--ink-soft)]">
                   {tech.name}
                 </span>
-              </motion.div>
+              </motion.a>
             );
           })}
         </div>
