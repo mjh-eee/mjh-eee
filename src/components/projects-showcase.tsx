@@ -91,7 +91,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 </Button>
               )}
               {project.repoUrl && (
-                <Button size="sm" variant="secondary" asChild>
+                <Button size="sm" variant="outline" asChild>
                   <a
                     href={project.repoUrl}
                     target="_blank"
