@@ -64,7 +64,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             >
               {project.liveUrl && (
                 <Button size="sm" asChild>
-                  
+                  <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -77,7 +77,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               )}
               {project.repoUrl && (
                 <Button size="sm" variant="secondary" asChild>
-                  
+                  <a
                     href={project.repoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -114,7 +114,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
         <div className="flex items-center gap-4 pt-2 md:hidden">
           {project.liveUrl && (
-            
+            <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -125,7 +125,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </a>
           )}
           {project.repoUrl && (
-            
+            <a
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
